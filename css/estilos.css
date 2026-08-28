@@ -1,0 +1,34 @@
+/* ===== ESTILOS GENERALES (aplican a index.html y login.html) ===== */
+body {
+    background-color: #f4f6f8;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #212529;
+}
+
+/* ===== INDEX.HTML: Formulario "Agregar libro" ===== */
+.card-formulario {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== INDEX.HTML: Tabla "Mis libros" ===== */
+.card-tabla {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 24px;
+}
+
+/* ===== INDEX.HTML: Inputs y selects del formulario ===== */
+.card-formulario .form-control,
+.card-formulario .form-select {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    padding: 8px 12px;
+}
+.card-formulario .btn{
+    margin-top: 8px;
+}
