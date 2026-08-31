@@ -1,44 +1,55 @@
-/* ===== ESTILOS GENERALES (aplican a index.html y login.html) ===== */
-body {
-    background-color: #f4f6f8;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #212529;
+/* ===== INDEX.HTML: Layout general (sidebar + contenido) ===== */
+.layout{
+    display: flex;
+    min-height: 100vh;
 }
 
-/* ===== INDEX.HTML: Formulario "Agregar libro" ===== */
-.card-formulario {
-    background-color: #ffffff;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+/* ===== INDEX.HTML: Sidebar ===== */
+.sidebar{
+    width: 250px;
+    background-color: #1e1e2f;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* ===== INDEX.HTML: Tabla "Mis libros" ===== */
-.card-tabla {
-    background-color: #ffffff;
-    padding: 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 24px;
+.sidebar-brand{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
-/* ===== INDEX.HTML: Inputs y selects del formulario ===== */
-.card-formulario .form-control,
-.card-formulario .form-select {
+.sidebar-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li{
+    padding: 12px 10px;
     border-radius: 6px;
-    border: 1px solid #ced4da;
-    padding: 8px 12px;
-}
-.card-formulario .btn{
-    margin-top: 8px;
+    margin-bottom: 6px;
+    cursor: pointer;
 }
 
-/* ===== LOGIN.HTML: Card de acceso ===== */
-.card-login {
-  background-color: #ffffff;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 40px auto 0;
+.sidebar-menu li:hover{
+    background-color: #2c2c44;
+}
+
+.btn-logout-sidebar{
+    margin-top: auto;
+    background: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ===== INDEX.HTML: Contenido principal ===== */
+.main-content{
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f6f8;
 }
