@@ -1,0 +1,104 @@
+/* ===== LOGIN.HTML: Fondo de la página ===== */
+.login-body{
+    background-color: #2b2b3d;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.login-card{
+    position: relative;
+    background-color: #3a3a52;
+    width: 320px;
+    padding: 50px 30px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== LOGIN.HTML: Ícono circular superior ===== */
+.login-icon{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1e1e2f;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+/* ===== LOGIN.HTML: Contenedor de inputs ===== */
+.login-inputs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ===== LOGIN.HTML: Input con ícono a la izquierda ===== */
+.input-with-icon{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-with-icon i{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9a9ab0;
+}
+
+.input-with-icon input{
+    width: 100%;
+    padding: 10px 12px 10px 38px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4d4d68;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.input-with-icon input::placeholder {
+  color: #b8b8cc;
+}
+
+.input-with-icon input:focus {
+  outline: 2px solid #6c63ff;
+}
+
+/* ===== LOGIN.HTML: Botones ===== */
+.btn-login-main {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c63ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-login-main:hover {
+  background-color: #5a52e0;
+}
+
+.btn-login-secondary {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  color: #b8b8cc;
+  border: 1px solid #5a5a75;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-login-secondary:hover {
+  background-color: #4d4d68;
+}
