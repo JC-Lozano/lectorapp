@@ -53,3 +53,40 @@
     padding: 30px;
     background-color: #f4f6f8;
 }
+
+/* ===== INDEX.HTML: Navegación de pestañas ===== */
+.tabs{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dcdce0;
+}
+
+.tab-btn{
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6c6c80;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+
+.tab-btn:hover{
+    color: #1e1e2f;
+}
+
+.tab-btn.active{
+    color: #6c63ff;
+    border-bottom: 2px solid #6c63ff;
+}
+
+/* ===== INDEX.HTML: Contenido de cada pestaña ===== */
+.tab-content{
+    display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
